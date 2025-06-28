@@ -1,0 +1,80 @@
+.popularRestaurantContainer {
+    margin: 5vh 2vw 10vh 2vw;
+    background-color: rgba(235, 239, 243, 0.7);
+    padding: 20px 0;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+}
+
+.popularRestaurantContainer h3 {
+    margin-left: 2vw;
+    color: rgb(234, 115, 60);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.popularRestaurant-body {
+    display: flex;
+    gap: 25px;
+    margin: 3vh 2vw;
+    overflow-x: auto;
+    height: fit-content;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    scrollbar-width: thin;
+}
+
+.popularRestaurant-body::-webkit-scrollbar {
+    height: 8px;
+}
+
+.popularRestaurant-body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.popularRestaurantCard {
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease-in-out;
+    background-color: #fefefe;
+    width: fit-content;
+}
+
+.popularRestaurantCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px 0px;
+    transform: translateY(-5px);
+}
+
+.popularRestaurantCard img {
+    height: 30vh;
+    width: 35vh;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.popularRestaurantCard-data {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.popularRestaurantCard-data h6 {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.popularRestaurantCard-data p {
+    font-size: 0.75rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.popularRestaurantCard-data h5 {
+    font-size: 1.1rem;
+    color: rgb(224, 47, 47);
+    margin-top: 5px;
+}

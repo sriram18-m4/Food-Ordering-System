@@ -1,0 +1,160 @@
+.profilePage {
+    margin-top: 15vh;
+    display: flex;
+    gap: 2vw;
+    padding: 0 2vw;
+    flex-wrap: wrap;
+}
+
+/* Profile Info Card */
+.profileCard {
+    flex: 1 1 20%;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 2vh 1.5vw;
+    background-color: rgba(242, 244, 246, 0.425);
+    border: 1px solid #ebe6e698;
+    border-radius: 0.6rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.profileCard:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.profileCard span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profileCard span h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: rgb(45, 58, 69);
+    font-weight: 500;
+}
+
+.profileCard span p {
+    margin: 0;
+    color: rgb(81, 108, 132);
+}
+
+/* Orders Section */
+.profileOrders-container {
+    flex: 1 1 75%;
+    height: fit-content;
+    padding: 0 1vw;
+}
+
+.profileOrders-container h3 {
+    font-size: 1.5rem;
+    margin: 2vh 0;
+    color: rgb(84, 109, 130);
+}
+
+.profileOrders {
+    max-height: 70vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 1vw;
+}
+
+/* Scrollbar Styling (Optional) */
+.profileOrders::-webkit-scrollbar {
+    width: 6px;
+}
+.profileOrders::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.profileOrder {
+    display: flex;
+    gap: 30px;
+    background-color: rgba(235, 241, 241, 0.354);
+    padding: 3vh;
+    border: 1px solid #e8e3e397;
+    border-radius: 0.8rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.profileOrder:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.profileOrder img {
+    height: 25vh;
+    width: 17vw;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+/* Order Data */
+.profileOrder-data {
+    width: 100%;
+}
+
+.profileOrder-data h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: rgb(51, 83, 111);
+}
+
+.profileOrder-data ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.profileOrder-data ul li {
+    font-size: 0.8rem;
+    color: rgb(131, 136, 141);
+    list-style: none;
+}
+
+/* Price & Meta Info */
+.profileOrder-data div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profileOrder-data div span p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.profileOrder-data div span p b {
+    color: rgb(114, 129, 143);
+}
+
+.profileOrder-data div span h5 {
+    font-size: 1rem;
+    color: rgb(89, 98, 105);
+    margin-bottom: 20px;
+}
+
+.profileOrder-data div span h5 b {
+    color: rgb(46, 73, 98);
+}
+
+/* Star Ratings */
+.rating-stars {
+    display: flex;
+    gap: 15px;
+}
+
+.rating-star-icons {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.star-rated {
+    color: rgb(255, 165, 40);
+}

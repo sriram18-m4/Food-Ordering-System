@@ -1,0 +1,142 @@
+.all-orders-page {
+    background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+    min-height: 100vh;
+    width: 100%;
+    padding: 15vh 3vw 3vh 3vw;
+    box-sizing: border-box;
+}
+
+.all-orders-page h3 {
+    font-size: 1.8rem;
+    margin: 2vh 0;
+    color: #d6e1ec;
+    font-weight: 500;
+}
+
+.all-orders {
+    max-height: 70vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 5px;
+}
+
+/* Scrollbar style */
+.all-orders::-webkit-scrollbar {
+    width: 6px;
+}
+.all-orders::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.all-orders-order {
+    display: flex;
+    gap: 2rem;
+    background: rgba(24, 24, 24, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.all-orders-order:hover {
+    transform: translateY(-3px);
+}
+
+.all-orders-order img {
+    width: 16vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.all-orders-order-data {
+    flex-grow: 1;
+}
+
+.all-orders-order-data h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #9dbcd3;
+    font-weight: 600;
+}
+
+.all-orders-order-data ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    margin: 0.8rem 0;
+    padding-left: 1rem;
+}
+
+.all-orders-order-data ul li {
+    font-size: 0.85rem;
+    color: #b5c4cf;
+}
+
+.all-orders-order-data p {
+    font-size: 0.85rem;
+    color: #b0b4b8;
+    margin-bottom: 5px;
+}
+
+.all-orders-order-data > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.all-orders-order-data div span {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-orders-order-data div span p {
+    font-size: 0.95rem;
+    color: #d1d7dc;
+}
+
+.all-orders-order-data div span p b {
+    color: #86a1b5;
+}
+
+.all-orders-order-data div span h5 {
+    font-size: 1rem;
+    color: #cdd4da;
+    margin-bottom: 10px;
+}
+
+.all-orders-order-data div span h5 b {
+    color: #6da0c1;
+}
+
+.all-orders-order-data div select {
+    height: 36px;
+    padding: 0 10px;
+    border-radius: 0.5rem;
+    border: 1px solid #aaa;
+    background-color: #181818;
+    color: #dbe0e6;
+    font-size: 0.9rem;
+}
+
+.all-orders-order-data div button {
+    height: 36px;
+    padding: 0 20px;
+    border-radius: 0.5rem;
+    background-color: #f08329df;
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.all-orders-order-data div button:hover {
+    background-color: #d6721f;
+}
